@@ -131,7 +131,7 @@ export default function ContactForm() {
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-sm text-slate-700 fade-in-up">
           <p className="text-xs">
             🔒 Vos données seront traitées par une IA (OpenAI), stockées 24 mois. Lire la
-            <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold"> Politique de Confidentialité complète</a>.
+            <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold"> Politique de Confidentialité complète</a>.
           </p>
         </div>
 
@@ -284,7 +284,7 @@ export default function ContactForm() {
               <span className="text-sm text-slate-700">
                 J'accepte la{' '}
                 <a
-                  href="/privacy"
+                  href="/privacy.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline font-semibold"

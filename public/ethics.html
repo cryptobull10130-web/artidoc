@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charte Éthique IA - ArtiDoc Pro</title>
+  <meta name="description" content="Notre engagement éthique pour une IA responsable, transparente et sécurisée" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: #0f766e;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .back-link:hover {
+      background: #0f766e;
+      color: white;
+    }
+
+    .content {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0f766e;
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem 0;
+      border-bottom: 3px solid #a7f3d0;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: #1e293b;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.75rem 0;
+    }
+
+    h4 {
+      color: #0f766e;
+      font-size: 1.1rem;
+      margin: 1rem 0 0.5rem 0;
+      font-weight: 600;
+    }
+
+    p, li {
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: #0f766e;
+    }
+
+    a {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .principle {
+      background: #f0fdfa;
+      border-left: 5px solid #0f766e;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0.25rem;
+    }
+
+    .principle h4 {
+      margin-top: 0;
+      color: #0f766e;
+    }
+
+    .metric-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .metric-table th,
+    .metric-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .metric-table th {
+      background: #f0fdfa;
+      font-weight: 600;
+      color: #0f766e;
+    }
+
+    .metric-table tr:hover {
+      background: #f8fafc;
+    }
+
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0.25rem;
+    }
+
+    .highlight strong {
+      color: #1e40af;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .button.primary {
+      background: #0f766e;
+      color: white;
+    }
+
+    .button.primary:hover {
+      background: #115e59;
+    }
+
+    footer {
+      background: #0f766e;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: #a7f3d0;
+    }
+
+    .principle-list {
+      display: grid;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .engagement-box {
+      background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .engagement-box p {
+      margin-bottom: 0.5rem;
+    }
+
+    .signature {
+      font-style: italic;
+      opacity: 0.9;
+      margin-top: 1rem;
+    }
+
+    .procedure-steps {
+      background: #f0fdfa;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
+      line-height: 2;
+    }
+
+    .procedure-steps code {
+      background: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      color: #0f766e;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🤖 Charte Éthique IA</h1>
+    <p>Notre engagement envers une IA responsable, transparente et sécurisée</p>
+  </header>
+
+  <div class="container">
+    <a href="/" class="back-link">← Retour à la page d'accueil</a>
+
+    <div class="content">
+      <h2>📋 Préambule</h2>
+
+      <p>
+        ArtiDoc Pro s'engage à déployer l'IA de manière <strong>responsable, transparente et sécurisée</strong>.
+        Cette charte encadre l'usage de l'intelligence artificielle dans nos workflows d'automatisation
+        (génération devis, contrats, emails) afin de protéger nos clients artisans et leurs données.
+      </p>
+
+      <p>
+        Elle s'applique à <strong>l'équipe</strong> (Arnaud Turquin, ArtiDoc Pro), à nos <strong>partenaires techniques</strong>
+        (OpenAI, N8N, Genspark) et à tous les tiers impliqués. Notre engagement s'inscrit dans le cadre du
+        <strong>RGPD</strong> (conformité données), de l'<strong>AI Act français</strong> (transparence IA) et
+        des standards d'éthique IA reconnus internationalement.
+      </p>
+
+      <p>
+        Cette charte sera révisée <strong>annuellement</strong> ou en cas de changement significatif dans nos pratiques IA.
+      </p>
+    </div>
+
+    <div class="content">
+      <h2>🎯 5 Principes Éthiques</h2>
+
+      <div class="principle">
+        <h4>1️⃣ TRANSPARENCE — L'utilisateur sait toujours que l'IA intervient</h4>
+        <p>
+          Nous informons clairement nos clients que l'IA (OpenAI GPT-4o-mini) assiste dans la génération
+          de contenu (devis, contrats, emails). Chaque document généré automatiquement porte une mention explicite.
+        </p>
+        <p><strong>✅ En pratique :</strong></p>
+        <ul>
+          <li>Mention sur le dashboard : "📋 Devis généré par IA — Validé manuellement"</li>
+          <li>Footer des emails : "Email rédigé avec assistance IA pour gagner du temps"</li>
+          <li>Contrats : watermark "Contrat assisté par IA, validé légalement"</li>
+          <li>Landing page + Politique de Confidentialité : déclaration transparente</li>
+        </ul>
+        <p><strong>⛔ Limite :</strong> L'IA ne doit jamais envoyer sans validation humaine.</p>
+      </div>
+
+      <div class="principle">
+        <h4>2️⃣ PROTECTION DES DONNÉES — Respect strict du RGPD et minimisation</h4>
+        <p>
+          Nous collectons le <strong>minimum de données</strong> nécessaire (nom, email, téléphone, secteur, détails projet).
+          Les données sont traitées selon le RGPD : consentement, droit d'accès, droit à l'oubli, conservation limitée à 24 mois.
+          Les données envoyées à OpenAI ne sont <strong>jamais conservées</strong> (API mode, pas d'entraînement modèle).
+        </p>
+        <p><strong>✅ En pratique :</strong></p>
+        <ul>
+          <li>Google Sheets : accès restreint, suppression auto après 24 mois</li>
+          <li>OpenAI API : données en transit &lt; 2 secondes, pas de stockage</li>
+          <li>Gmail/Vercel : HTTPS, chiffrement en transit, DPA signés</li>
+          <li>Droit d'accès/suppression : email à c.iaboss41@gmail.com, réponse &lt; 30 jours</li>
+        </ul>
+        <p><strong>⛔ Limite :</strong> Jamais de vente ou cession de données à des tiers.</p>
+      </div>
+
+      <div class="principle">
+        <h4>3️⃣ EXACTITUDE & FIABILITÉ — Vérification régulière et correction des erreurs</h4>
+        <p>
+          Nous reconnaissons que l'IA peut "halluciner" : générer du texte plausible mais factuellement faux.
+          Chaque devis/contrat généré est <strong>obligatoirement révisé</strong> par Arnaud avant envoi au prospect.
+          Les erreurs détectées sont corrigées et documentées pour améliorer les prompts.
+        </p>
+        <p><strong>✅ En pratique :</strong></p>
+        <ul>
+          <li>Workflow : Formulaire → IA → <strong>Révision Arnaud (30 min)</strong> → Envoi</li>
+          <li>Vérifications critiques : montants, SIRET, coordonnées bancaires, clauses légales</li>
+          <li>Log des corrections pour amélioration continue</li>
+          <li>Tests de robustesse tous les 3 mois (5 clients fictifs variés)</li>
+        </ul>
+        <p><strong>⛔ Limite :</strong> L'IA n'a jamais d'autonomie complète.</p>
+      </div>
+
+      <div class="principle">
+        <h4>4️⃣ NON-DISCRIMINATION — L'IA ne discrimine pas</h4>
+        <p>
+          L'IA ne doit pas générer de contenu discriminatoire ou biaisé (genre, secteur, région, taille entreprise).
+          Les prix, délais, termes doivent être <strong>identiques</strong> quel que soit le profil du prospect.
+        </p>
+        <p><strong>✅ En pratique :</strong></p>
+        <ul>
+          <li>Test mensuel : 10 devis avec profils variés (femmes/hommes, secteurs mélangés, régions différentes)</li>
+          <li>Comparaison : montants, tonalité, longueur des contrats doivent être identiques</li>
+          <li>Exemple test : "Électricien homme Marseille" vs "Électricienne femme Marseille" → devis identiques</li>
+          <li>Audit trimestriel : feuille "Audit non-discrimination IA" mise à jour</li>
+        </ul>
+        <p><strong>⛔ Limite :</strong> Pause immédiate si biais sérieux détecté.</p>
+      </div>
+
+      <div class="principle">
+        <h4>5️⃣ CONTRÔLE HUMAIN — L'humain garde la main, l'IA assiste</h4>
+        <p>
+          L'IA est un <strong>outil d'assistance</strong>, jamais un remplacement. Arnaud conserve le contrôle
+          final sur chaque décision. Les workflows offrent toujours une <strong>étape de révision manuelle</strong>
+          avant action. L'IA peut être débranchée instantanément en cas de dysfonctionnement.
+        </p>
+        <p><strong>✅ En pratique :</strong></p>
+        <ul>
+          <li>Dashboard : bouton "Valider et envoyer" obligatoire (pas d'auto-envoi)</li>
+          <li>Audit trail : log de chaque action (génération → révision → envoi) traçable</li>
+          <li>Rollback : possibilité de "régénérer" ou "éditer manuellement"</li>
+          <li>Circuit-breaker : désactivation IA en 1 clic si dysfonctionnement</li>
+          <li>Formation artisan : guide "Comment éditer vos devis IA"</li>
+        </ul>
+        <p><strong>⛔ Limite :</strong> Jamais d'action automatique sans approbation explicite.</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>📊 Suivi & Audit</h2>
+
+      <h3>Métriques de conformité (suivi mensuel)</h3>
+
+      <table class="metric-table">
+        <thead>
+          <tr>
+            <th>Métrique</th>
+            <th>Cible</th>
+            <th>Fréquence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>% devis révisés</strong></td>
+            <td>100%</td>
+            <td>Mensuel</td>
+          </tr>
+          <tr>
+            <td><strong>Temps révision moyen</strong></td>
+            <td>&lt; 30 min</td>
+            <td>Mensuel</td>
+          </tr>
+          <tr>
+            <td><strong>Erreurs détectées/corrigées</strong></td>
+            <td>Log actualisé</td>
+            <td>Continu</td>
+          </tr>
+          <tr>
+            <td><strong>Tests non-discrimination</strong></td>
+            <td>10 cas/mois</td>
+            <td>Mensuel</td>
+          </tr>
+          <tr>
+            <td><strong>Satisfaction client</strong></td>
+            <td>&gt; 90%</td>
+            <td>Trimestriel</td>
+          </tr>
+          <tr>
+            <td><strong>Incidents éthiques</strong></td>
+            <td>0</td>
+            <td>Continu</td>
+          </tr>
+          <tr>
+            <td><strong>Demandes RGPD</strong></td>
+            <td>Réponse &lt; 30j</td>
+            <td>Au cas par cas</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Procédure en cas d'incident éthique</h3>
+
+      <div class="procedure-steps">
+        <code>Incident détecté</code> (biais, erreur grave, fuite données)<br>
+        ↓<br>
+        <code>Pause immédiate</code> de la fonction concernée<br>
+        ↓<br>
+        <code>Investigation</code> (30min - 2h selon gravité)<br>
+        ↓<br>
+        <code>Correction</code> (code, prompt, données)<br>
+        ↓<br>
+        <code>Test de régression</code> (5+ cas test)<br>
+        ↓<br>
+        <code>Redéploiement</code> sécurisé<br>
+        ↓<br>
+        <code>Communication client</code> si nécessaire<br>
+        ↓<br>
+        <code>Documentation</code> dans le log "Incidents éthiques"
+      </div>
+
+      <p>
+        <strong>Escalade :</strong> Tout incident impliquant des données personnelles → notification RGPD.
+        Tout biais systématique → étude d'impact immédiate.
+      </p>
+    </div>
+
+    <div class="content">
+      <div class="engagement-box">
+        <h2 style="color: white; border-bottom-color: rgba(255,255,255,0.3); margin-top: 0;">✍️ Engagement</h2>
+
+        <p>
+          Je m'engage personnellement à respecter cette charte dans le développement et le déploiement d'ArtiDoc Pro.
+        </p>
+
+        <div class="signature">
+          <strong>Arnaud Turquin</strong><br>
+          Fondateur, ArtiDoc Pro<br>
+          ✉️ c.iaboss41@gmail.com<br>
+          📞 07 60 21 76 69
+        </div>
+
+        <p style="margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
+          <strong>Date d'application :</strong> 2026-05-04<br>
+          <strong>Prochaine revue :</strong> 2027-05-04 (annuelle) ou immédiatement en cas d'incident
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>📚 Ressources & Contact</h2>
+
+      <p>
+        Pour toute question concernant cette charte éthique ou pour signaler une préoccupation :
+      </p>
+
+      <div class="button-group">
+        <a href="mailto:c.iaboss41@gmail.com?subject=Charte%20Éthique%20IA%20-%20Question" class="button primary">
+          ✉️ Nous contacter
+        </a>
+      </div>
+
+      <p style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+        <strong>Documents connexes :</strong><br>
+        • <a href="/privacy" target="_blank">Politique de Confidentialité</a><br>
+        • <a href="/privacy" target="_blank">Mentions Légales</a><br>
+        • <a href="https://github.com/cryptobull10130-web/artidoc" target="_blank">Code source (GitHub)</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>ArtiDoc Pro</strong> — Automatisation IA responsable pour artisans BTP</p>
+    <p>📞 07 60 21 76 69 | ✉️ c.iaboss41@gmail.com</p>
+    <p>© 2026 Tous droits réservés | <a href="/ethics">Charte Éthique</a> | <a href="/privacy">Politique de Confidentialité</a></p>
+  </footer>
+</body>
+</html>

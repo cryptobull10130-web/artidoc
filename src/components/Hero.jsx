@@ -11,12 +11,12 @@ export default function Hero() {
               Automatisation IA pour artisans BTP
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              Récupère 15h par semaine sur ton administratif.
+              Arrête de perdre 15h/semaine
               <br />
-              <span className="text-orange-400">Sans embaucher, sans formation.</span>
+              <span className="text-orange-400">en paperasse.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed mb-8">
-              ArtiDoc Pro automatise tes devis, tes relances prospects et ta gestion admin avec l'IA. Tu te concentres sur tes chantiers, on s'occupe du reste.
+              Devis, relances, gestion client — tout automatisé. Tu valides, l'IA envoie.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">

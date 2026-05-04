@@ -4,7 +4,6 @@ import BenefitsSection from './components/BenefitsSection'
 import HowItWorksSection from './components/HowItWorksSection'
 import ContactForm from './components/ContactForm'
 import FaqSection from './components/FaqSection'
-import Privacy from './components/Privacy'
 import Footer from './components/Footer'
 import useScrollReveal from './hooks/useScrollReveal'
 
@@ -19,7 +18,6 @@ export default function App() {
       <HowItWorksSection />
       <ContactForm />
       <FaqSection />
-      <Privacy />
       <Footer />
     </div>
   )

@@ -15,14 +15,18 @@ export default function ContactForm() {
     ville: '',
     message: '',
     website: '', // honeypot
+    acceptedTerms: false,
   })
   const [errors, setErrors] = useState({})
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
   const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
+    const { name, value, type, checked } = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }))
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: '' }))
     }
@@ -40,6 +44,7 @@ export default function ContactForm() {
     }
     if (!formData.message.trim()) newErrors.message = 'Message requis'
     else if (formData.message.trim().length < 10) newErrors.message = 'Au moins 10 caractères'
+    if (!formData.acceptedTerms) newErrors.acceptedTerms = 'Vous devez accepter la politique de confidentialité'
     return newErrors
   }
 
@@ -122,18 +127,11 @@ export default function ContactForm() {
           </p>
         </div>
 
-        {/* Notice RGPD */}
+        {/* Info RGPD */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-sm text-slate-700 fade-in-up">
-          <p className="mb-2">
-            <strong>🔒 Protection de vos données :</strong> En soumettant ce formulaire, vous consentez au traitement de vos données personnelles par ArtiDoc Pro pour vous contacter sous 2h et vous proposer une démo.
-          </p>
-          <ul className="list-disc pl-5 space-y-1 text-xs mb-2">
-            <li>Vos données seront traitées par une IA (OpenAI) pour générer une réponse personnalisée</li>
-            <li>Conservation : 24 mois après votre dernier contact</li>
-            <li>Vous avez le droit à tout moment de demander l'accès, la rectification ou la suppression de vos données</li>
-          </ul>
-          <p className="text-xs text-slate-600">
-            Lire notre <a href="#privacy" className="text-blue-600 hover:underline font-semibold">Politique de Confidentialité complète</a>
+          <p className="text-xs">
+            🔒 Vos données seront traitées par une IA (OpenAI), stockées 24 mois. Lire la
+            <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold"> Politique de Confidentialité complète</a>.
           </p>
         </div>
 
@@ -269,6 +267,35 @@ export default function ContactForm() {
             />
             {errors.message && (
               <p className="text-red-600 text-sm mt-1">{errors.message}</p>
+            )}
+          </div>
+
+          {/* Checkbox RGPD */}
+          <div className="mb-6">
+            <label className="flex items-center gap-3 cursor-pointer">
+              <input
+                type="checkbox"
+                name="acceptedTerms"
+                checked={formData.acceptedTerms}
+                onChange={handleChange}
+                className="w-5 h-5 rounded border-slate-300 text-accent focus:ring-accent"
+                required
+              />
+              <span className="text-sm text-slate-700">
+                J'accepte la{' '}
+                <a
+                  href="/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline font-semibold"
+                >
+                  Politique de Confidentialité
+                </a>
+                {' '}et j'accepte que mes données soient traitées par une IA (OpenAI)
+              </span>
+            </label>
+            {errors.acceptedTerms && (
+              <p className="text-red-600 text-sm mt-1">{errors.acceptedTerms}</p>
             )}
           </div>
 

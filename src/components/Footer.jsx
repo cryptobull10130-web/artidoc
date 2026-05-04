@@ -25,11 +25,11 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 flex-wrap">
           <div className="flex flex-wrap gap-x-2 gap-y-1 justify-center md:justify-start text-sm">
-            <a href="#privacy" className="hover:text-white transition-colors">
+            <a href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Politique de confidentialité
             </a>
             <span>·</span>
-            <a href="#privacy" className="hover:text-white transition-colors">
+            <a href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Mentions légales
             </a>
             <span>·</span>
@@ -47,9 +47,8 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-slate-500 mt-6 text-center">
-          <strong>🔒 Données privées.</strong> Vos données sont protégées (RGPD).
-          Traitement IA : OpenAI. Conservation : 24 mois.
-          <a href="#privacy" className="hover:text-white transition-colors underline"> Lire la politique complète</a>.
+          <strong>🔒 Données privées.</strong> Traitement IA : OpenAI. Conservation : 24 mois.
+          <a href="/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline"> Lire la politique complète</a>.
         </p>
       </div>
     </footer>

@@ -25,7 +25,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 flex-wrap">
           <div className="flex flex-wrap gap-x-2 gap-y-1 justify-center md:justify-start text-sm">
-            <a href="#ethics" className="hover:text-white transition-colors">
+            <a href="/ethics" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Charte Éthique IA
             </a>
             <span>·</span>

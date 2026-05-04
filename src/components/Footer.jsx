@@ -23,14 +23,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-wrap gap-x-2 gap-y-1 justify-center md:justify-start">
-            <a href="#" className="hover:text-white transition-colors">
+        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-x-2 gap-y-1 justify-center md:justify-start text-sm">
+            <a href="#privacy" className="hover:text-white transition-colors">
+              Politique de confidentialité
+            </a>
+            <span>·</span>
+            <a href="#privacy" className="hover:text-white transition-colors">
               Mentions légales
             </a>
             <span>·</span>
-            <a href="#" className="hover:text-white transition-colors">
-              Politique de confidentialité
+            <a href="mailto:c.iaboss41@gmail.com?subject=Exercice%20des%20droits%20RGPD" className="hover:text-white transition-colors">
+              Droits RGPD
             </a>
             <span>·</span>
             <a href="#contact" className="hover:text-white transition-colors">
@@ -43,8 +47,9 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-slate-500 mt-6 text-center">
-          Les données collectées via ce formulaire sont utilisées uniquement pour te recontacter.
-          Aucune cession à des tiers.
+          <strong>🔒 Données privées.</strong> Vos données sont protégées (RGPD).
+          Traitement IA : OpenAI. Conservation : 24 mois.
+          <a href="#privacy" className="hover:text-white transition-colors underline"> Lire la politique complète</a>.
         </p>
       </div>
     </footer>

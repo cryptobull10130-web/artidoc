@@ -122,6 +122,21 @@ export default function ContactForm() {
           </p>
         </div>
 
+        {/* Notice RGPD */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-sm text-slate-700 fade-in-up">
+          <p className="mb-2">
+            <strong>🔒 Protection de vos données :</strong> En soumettant ce formulaire, vous consentez au traitement de vos données personnelles par ArtiDoc Pro pour vous contacter sous 2h et vous proposer une démo.
+          </p>
+          <ul className="list-disc pl-5 space-y-1 text-xs mb-2">
+            <li>Vos données seront traitées par une IA (OpenAI) pour générer une réponse personnalisée</li>
+            <li>Conservation : 24 mois après votre dernier contact</li>
+            <li>Vous avez le droit à tout moment de demander l'accès, la rectification ou la suppression de vos données</li>
+          </ul>
+          <p className="text-xs text-slate-600">
+            Lire notre <a href="#privacy" className="text-blue-600 hover:underline font-semibold">Politique de Confidentialité complète</a>
+          </p>
+        </div>
+
         <form
           onSubmit={handleSubmit}
           noValidate

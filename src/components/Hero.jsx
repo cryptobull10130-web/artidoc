@@ -1,9 +1,31 @@
 import { CheckCircle2, Mail, Clock } from 'lucide-react'
+import Antigravity from './Antigravity'
 
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-primary to-primary-alt text-white overflow-hidden">
-      <div className="container-page py-16 md:py-24 lg:py-32">
+      {/* Antigravity background animation */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <Antigravity
+          width={typeof window !== 'undefined' ? window.innerWidth : 1080}
+          height={800}
+          count={300}
+          magnetRadius={20}
+          ringRadius={15}
+          waveSpeed={0.8}
+          waveAmplitude={0.8}
+          particleSize={2}
+          lerpSpeed={0.12}
+          color="#ff6b35"
+          autoAnimate={true}
+          particleVariance={0.8}
+          rotationSpeed={0.15}
+          depthFactor={0.6}
+          pulseSpeed={2}
+          fieldStrength={5}
+        />
+      </div>
+      <div className="container-page py-16 md:py-24 lg:py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Texte */}
           <div>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F2942;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B3A5C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="180" fill="#F97316" opacity="0.08" />
+  <circle cx="150" cy="500" r="220" fill="#F97316" opacity="0.06" />
+
+  <!-- Logo mark (top-left) -->
+  <g transform="translate(80, 80)">
+    <rect width="56" height="56" rx="10" fill="#F97316" />
+    <path d="M14 42 L28 14 L42 42 M19 31 L37 31"
+          stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Brand name -->
+  <text x="156" y="120" font-family="Plus Jakarta Sans, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">ArtiDoc Pro</text>
+
+  <!-- Tagline small -->
+  <text x="80" y="200" font-family="Inter, sans-serif" font-size="22" font-weight="500" fill="#F97316">AUTOMATISATION IA POUR ARTISANS BTP</text>
+
+  <!-- Main headline -->
+  <text x="80" y="280" font-family="Plus Jakarta Sans, sans-serif" font-size="68" font-weight="800" fill="#FFFFFF">Récupère 15h/semaine</text>
+  <text x="80" y="360" font-family="Plus Jakarta Sans, sans-serif" font-size="68" font-weight="800" fill="#FFFFFF">sur ton administratif.</text>
+
+  <!-- Sub -->
+  <text x="80" y="420" font-family="Inter, sans-serif" font-size="26" font-weight="400" fill="#CBD5E1">Devis IA · Chatbot · Relances auto · Sans abonnement</text>
+
+  <!-- CTA badge -->
+  <rect x="80" y="475" width="280" height="64" rx="10" fill="url(#accent)" />
+  <text x="220" y="515" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">Démo gratuite · 1 500€</text>
+
+  <!-- Mini features bullets -->
+  <g transform="translate(420, 475)">
+    <circle cx="12" cy="20" r="4" fill="#F97316" />
+    <text x="28" y="26" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">Setup en 7 jours</text>
+
+    <circle cx="12" cy="58" r="4" fill="#F97316" />
+    <text x="28" y="64" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">Sans engagement</text>
+  </g>
+
+  <g transform="translate(700, 475)">
+    <circle cx="12" cy="20" r="4" fill="#F97316" />
+    <text x="28" y="26" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">Réponse sous 2h</text>
+
+    <circle cx="12" cy="58" r="4" fill="#F97316" />
+    <text x="28" y="64" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">Plombier · Électricien · Maçon</text>
+  </g>
+
+  <!-- URL bottom-right -->
+  <text x="1120" y="590" font-family="Inter, sans-serif" font-size="22" font-weight="600" fill="#94A3B8" text-anchor="end">artidocpro.fr</text>
+</svg>

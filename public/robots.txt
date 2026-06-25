@@ -1,0 +1,12 @@
+# robots.txt - ArtiDoc Pro
+# https://artidocpro.fr
+
+User-agent: *
+Allow: /
+
+# Empêche l'indexation des URLs techniques Vercel
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://artidocpro.fr/sitemap.xml

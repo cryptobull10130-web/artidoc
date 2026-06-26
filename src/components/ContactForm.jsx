@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CheckCircle2, Loader2 } from 'lucide-react'
 
-const WEBHOOK_URL = 'https://n8n-formation.isao.io/webhook/a93afea5-62f1-42ba-a94e-0c37b2c0bcdc'
+const WEBHOOK_URL = 'https://n8n-formation.isao.io/webhook/artidoc-lead'
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
 export default function ContactForm() {

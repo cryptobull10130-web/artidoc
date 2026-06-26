@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/ethics", "destination": "/ethics.html" }
+    { "source": "/ethics", "destination": "/ethics.html" },
+    { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
   ]
 }
